@@ -118,11 +118,9 @@ export function SideBar(props: { className?: string }) {
     >
       <div className={styles["sidebar-header"]} data-tauri-drag-region>
         <div className={styles["sidebar-title"]} data-tauri-drag-region>
-          ChatGPT-Midjourney
+          临时AI工具
         </div>
-        <div className={styles["sidebar-sub-title"]}>
-          Your own AI assistant.
-        </div>
+        <div className={styles["sidebar-sub-title"]}>ChatGPT和Midjourney</div>
         <div className={styles["sidebar-logo"] + " no-dark"}>
           <ChatGptIcon />
         </div>
@@ -134,13 +132,6 @@ export function SideBar(props: { className?: string }) {
           text={shouldNarrow ? undefined : Locale.Mask.Name}
           className={styles["sidebar-bar-button"]}
           onClick={() => navigate(Path.NewChat, { state: { fromHome: true } })}
-          shadow
-        />
-        <IconButton
-          icon={<GemIcon />}
-          text={shouldNarrow ? undefined : "Pro"}
-          className={styles["sidebar-bar-button"]}
-          onClick={() => window.open(REPO_URL + "-Pro", "_blank")}
           shadow
         />
       </div>
@@ -168,15 +159,10 @@ export function SideBar(props: { className?: string }) {
               }}
             />
           </div>
-          <div className={styles["sidebar-action"]}>
+          <div className={styles["sidebar-action"]} style={{ display: "none" }}>
             <Link to={Path.Settings}>
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
-          </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
-            </a>
           </div>
         </div>
         <div>

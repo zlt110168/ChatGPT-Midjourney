@@ -80,7 +80,7 @@ const cn = {
     },
     Commands: {
       new: "新建聊天",
-      newm: "从面具新建聊天",
+      newm: "从示例问题新建聊天",
       next: "下一个聊天",
       prev: "上一个聊天",
       clear: "清除上下文",
@@ -95,7 +95,7 @@ const cn = {
         dark: "深色模式",
       },
       Prompt: "快捷指令",
-      Masks: "所有面具",
+      Masks: "所有示例问题",
       Clear: "清除聊天",
       Settings: "对话设置",
     },
@@ -111,7 +111,7 @@ const cn = {
     Send: "发送",
     Config: {
       Reset: "清除记忆",
-      SaveAs: "存为面具",
+      SaveAs: "存为示例问题",
     },
     IsContext: "预设提示词",
   },
@@ -127,8 +127,8 @@ const cn = {
       SubTitle: "可以导出 Markdown 文本或者 PNG 图片",
     },
     IncludeContext: {
-      Title: "包含面具上下文",
-      SubTitle: "是否在消息中展示面具上下文",
+      Title: "包含示例问题上下文",
+      SubTitle: "是否在消息中展示示例问题上下文",
     },
     Steps: {
       Select: "选取",
@@ -216,12 +216,12 @@ const cn = {
     },
     Mask: {
       Splash: {
-        Title: "面具启动页",
-        SubTitle: "新建聊天时，展示面具启动页",
+        Title: "示例问题启动页",
+        SubTitle: "新建聊天时，展示示例问题启动页",
       },
       Builtin: {
-        Title: "隐藏内置面具",
-        SubTitle: "在所有面具列表中隐藏内置面具",
+        Title: "隐藏内置示例问题",
+        SubTitle: "在所有示例问题列表中隐藏内置示例问题",
       },
     },
     Prompt: {
@@ -327,11 +327,11 @@ const cn = {
     Name: "插件",
   },
   Mask: {
-    Name: "面具",
+    Name: "示例问题",
     Page: {
-      Title: "预设角色面具",
+      Title: "预设角色示例问题",
       SubTitle: (count: number) => `${count} 个预设角色定义`,
-      Search: "搜索角色面具",
+      Search: "搜索角色示例问题",
       Create: "新建",
     },
     Item: {
@@ -344,7 +344,7 @@ const cn = {
     },
     EditModal: {
       Title: (readonly: boolean) =>
-        `编辑预设面具 ${readonly ? "（只读）" : ""}`,
+        `编辑预设示例问题 ${readonly ? "（只读）" : ""}`,
       Download: "下载预设",
       Clone: "克隆预设",
     },
@@ -361,8 +361,8 @@ const cn = {
         SubTitle: "隐藏后预设对话不会出现在聊天界面",
       },
       Share: {
-        Title: "分享此面具",
-        SubTitle: "生成此面具的直达链接",
+        Title: "分享此示例问题",
+        SubTitle: "生成此示例问题的直达链接",
         Action: "复制链接",
       },
     },
@@ -372,8 +372,8 @@ const cn = {
     Skip: "直接开始",
     NotShow: "不再展示",
     ConfirmNoShow: "确认禁用？禁用后可以随时在设置中重新启用。",
-    Title: "挑选一个面具",
-    SubTitle: "现在开始，与面具背后的灵魂思维碰撞",
+    Title: "挑选一个示例问题",
+    SubTitle: "现在开始，与示例问题背后的灵魂思维碰撞",
     More: "查看全部",
   },
 
